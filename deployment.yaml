@@ -29,6 +29,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: node-app-service
+  namespace: nitingoyal
 spec:
   selector:
     app: node-app
@@ -43,6 +44,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: node-app-config
+  namespace: nitingoyal
 data:
   Test_Key1: "Value1"
   Test_Key2: "Value2"
